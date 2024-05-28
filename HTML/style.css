@@ -4,16 +4,17 @@
     font-family: 'Courier New', Courier, monospace;
     box-sizing: border-box;
 }
-.container
-{
+
+.container {
     width: 100%;
-height: 100vh;
-background-image: url(bg.png );
-background-position: center; 
-background-size: cover;
-position:relative;
+    height: 100vh;
+    background-image: url(bg.png);
+    background-position: center; 
+    background-size: cover;
+    position: relative;
 }
-.form-box{
+
+.form-box {
     width: 90%;
     max-width: 450px;
     position: absolute;
@@ -23,15 +24,16 @@ position:relative;
     background: #fff;
     padding: 50px 60px 70px;
     text-align: center;
-    
 }
-.form-box h1{
+
+.form-box h1 {
     font-size: 30px;
     margin-bottom: 60px;
     color: #3c00a0;
     position: relative;
 }
-.form-box  h1::after{
+
+.form-box h1::after {
     content: '';
     width: 30px;
     height: 4px;
@@ -39,45 +41,51 @@ position:relative;
     background: #3c00a0;
     position: absolute;
     bottom: -12px;
-    left: 50px;
+    left: 50%;
     transform: translateX(-50%);
 }
 
-
-.input-field{
+.input-field {
     background: #eaeaea;
     margin: 15px 0;
-    border-radius:3px;
+    border-radius: 3px;
     display: flex;
     align-items: center;
     max-height: 65px;
     transition: max-height 0.5s;
     overflow: hidden;
 }
-input{
+
+.input-field input {
     width: 100%;
     background: transparent;
     border: 0;
     outline: 0;
     padding: 18px 15px;
-}.input-field i{
+}
+
+.input-field i {
     margin-left: 15px;
     color: #2d07eb99;
 }
-form p{
+
+form p {
     text-align: left;
     font-size: 13px;
 }
-form p a{
+
+form p a {
     text-decoration: none;
     color: #3c00a0;
 }
-.btn-field{
+
+.btn-field {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
-.btn-field button{
+
+.btn-field button {
     flex-basis: 48%;
     background: #3c00a0;
     color: #fff;
@@ -88,10 +96,12 @@ form p a{
     cursor: pointer;
     transition: background 1s;
 }
-.input-group{
-    height: 220px;
+
+.input-group {
+    height: 80px;
 }
-.btn-field button.disable{
+
+.btn-field button.disable {
     background: #eaeaea;
     color: #555;
 }

@@ -6,86 +6,66 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/7cec9946a2.js" crossorigin="anonymous"></script>
-    
 </head>
 <body>
     <div class="container">
-        <div class="form-box"
-          <h1 id="title">SIGN UP</h1>
-        <form>
-            <div class="input-group">
-                <div class="input-field" id="namefield">
-                    <i class="fa-solid fa-circle-user"></i>
-                    <input type="text" placeholder="Name">
-
+        <div class="form-box">
+            <h1 id="title">SIGN UP</h1>
+            <form>
+                <div class="input-group" id="namefield">
+                    <div class="input-field">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <input type="text" placeholder="Name">
+                    </div>
                 </div>
 
-
-                <div class="input-group">
+                <div class="input-group" id="emailField">
                     <div class="input-field">
                         <i class="fa-solid fa-envelope"></i>
                         <input type="email" placeholder="Email">
                     </div>
+                </div>
 
-
-
-                    <div class="input-group">
-                        <div class="input-field">
-                            <i class="fa-solid fa-lock"></i>
-                            <input type="Password" placeholder="Password">
-                        </div>
-                   </div>
-            </div>
-            <p>Forgot Password  <a href="#">Click Here!</a></p>
-            </div>
-            <div class="btn-field">
-                <button type="button" id="signupBtn">Sign Up </button>
-                <button type="button" id="signinBtn" class="disable">Sign In</button>
-            </div>
-        </form>
-          
-
-       </div>
-  </div>
-
-
-
+                <div class="input-group" id="passwordField">
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                </div>
+                <p>Forgot Password  <a href="#">Click Here!</a></p>
+                <div class="btn-field">
+                    <button type="button" id="signupBtn">Sign Up</button>
+                    <button type="button" id="signinBtn" class="disable">Sign In</button>
+                </div>
+            </form>
+        </div>
+    </div>
 
 <script>
+    let signupBtn = document.getElementById("signupBtn");
+    let signinBtn = document.getElementById("signinBtn");
+    let namefield = document.getElementById("namefield");
+    let emailField = document.getElementById("emailField");
+    let passwordField = document.getElementById("passwordField");
+    let title = document.getElementById("title");
 
-let signupBtn=document.getElementById("signupBtn");
-let signinBtn=document.getElementById("signinBtn");
-let namefield=document.getElementById("namefield");
-let title=document.getElementById("title");
+    signinBtn.addEventListener("click", function() {
+        namefield.style.display = "none"; // Disabling name field
+        emailField.style.maxHeight = "65px"; // Adjusting email field height
+        passwordField.style.maxHeight = "65px"; // Adjusting password field height
+        title.innerHTML = "Sign In";
+        signupBtn.classList.add("disable");
+        signinBtn.classList.remove("disable");
+    });
 
-
-
-
-signinBtn.oneclick=function()
-{
-    namefield.style.maxHeight= "0";
-    title.innerHTML="Sign In";
-    signupBtn.classList.add("disable");
-    signinBtn.classList.remove("disable");
-    
-
-    
-}
-signupBtn.oneclick=function()
-{
-    namefield.style.maxHeight="60";
-    title.innerHTML="Sign Up";
-    signupBtn.classList.remove("disable");
-    signinBtn.classList.add("disable");
-    
-
-    
-}
-
-
-
-
+    signupBtn.addEventListener("click", function() {
+        namefield.style.display = "block"; // Resetting name field display
+        emailField.style.maxHeight = "65px"; // Resetting email field height
+        passwordField.style.maxHeight = "65px"; // Resetting password field height
+        title.innerHTML = "Sign Up";
+        signupBtn.classList.remove("disable");
+        signinBtn.classList.add("disable");
+    });
 </script>
-
 </body>
 </html>
