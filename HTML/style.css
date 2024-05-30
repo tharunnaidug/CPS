@@ -47,7 +47,7 @@
 
 .input-field {
     background: #eaeaea;
-    margin: 15px 0;
+    margin: 10px 0;
     border-radius: 3px;
     display: flex;
     align-items: center;
@@ -72,6 +72,7 @@
 form p {
     text-align: left;
     font-size: 13px;
+    margin: 10px;
 }
 
 form p a {
@@ -98,7 +99,7 @@ form p a {
 }
 
 .input-group {
-    height: 80px;
+    height: 60px;
 }
 
 .btn-field button.disable {
