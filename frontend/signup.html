@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Placement System </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7cec9946a2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1 id="title">SIGN UP</h1>
+            <form method="post" action="http://localhost:3000/student/signup">
+                <div class="input-group" id="namefield">
+                    <div class="input-field">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <input type="text" placeholder="Name" name="name">
+                    </div>
+                </div>
+
+                <div class="input-group" id="emailField">
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="Email" name="email">
+                    </div>
+                </div>
+
+                <div class="input-group" id="passwordField">
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Password" name="password">
+                    </div>
+                </div>
+                <div class="input-group" id="">
+                    <div class="input-field">
+                        <i class="fa-solid fa-phone"></i>
+                        <input type="text" placeholder="Mobile Number" name="mobno">
+                    </div>
+                </div>
+                <div class="input-group" id="">
+                    <div class="input-field">
+                        <i class="fa-solid "></i>
+                        <input type="text" placeholder="Department" name="dep">
+                    </div>
+                </div>
+                <div class="input-group" id="">
+                    <div class="input-field" id="gen" style="align-items: start;">
+                        <input type="radio" name="gender" id="" value="male">Male
+                        <input type="radio" name="gender" id="" value="female">Female
+                    </div>
+                </div>
+                <div class="input-group" id="">
+                    <div class="input-field">
+                        <i class="fa-solid fa-time"></i>
+                        <input type="date" name="dob">
+                    </div>
+                </div>
+                <p>Forgot Password <a href="#">Click Here!</a></p>
+                <p>Already Have a Account <a href="index.html">Login !</a></p>
+                <div class="btn-field">
+                    <button type="submit" id="signupBtn">Sign Up</button>
+                    <button type="reset" id="">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
